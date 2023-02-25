@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+	
+	<section class="container" >
+	<div class="single_comment" th:each="user : ${users}">
+		
+		<div>
+		<img th:src="@{|data:image/png;base64,${user.document.img}|}" width="500" height=auto/>
+		</div>
+			
+			
+		<div class="message">
+		<span>[[${user.username}]]</span>
+		<p>[[${user.message}]]</p>
+		</div>		
+	
+	
+	
+	</div>
+	</section>
+</body>
+</html>

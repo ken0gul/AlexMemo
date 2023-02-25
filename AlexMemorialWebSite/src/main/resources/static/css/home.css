@@ -1,0 +1,44 @@
+img {
+	width: 75px;
+	height: 75px;
+}
+
+.container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap:25px;
+}
+
+.single_comment {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+	max-width:500px;
+	width:500px;
+	box-shadow: 3px 5px 12px black;
+	padding:12px 20px;
+	height: auto;
+	overflow-x:scroll;
+}
+
+.message {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	
+}
+
+.message p {
+	white-space: nowrap;
+	padding:5px 10px;
+	word-wrap:break-word;
+}
